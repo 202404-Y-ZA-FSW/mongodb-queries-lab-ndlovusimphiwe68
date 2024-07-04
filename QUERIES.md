@@ -4,12 +4,13 @@ Write a MongoDB query to:
 
 1. Display all the documents in the restaurants collection.
 ```
-Paste your solution here
+db.restaurants.find()
 ```
 
 2. Display the fields restaurant_id, name, borough and cuisine for all the documents in the collection.
 ```
-Paste your solution here
+db.restaurants.find({}, { restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id: 0 })
+
 ```
 
 3. Display the fields restaurant_id, name, borough and cuisine, but exclude the field _id for all the documents in the collection.
